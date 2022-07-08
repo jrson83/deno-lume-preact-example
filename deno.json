@@ -1,0 +1,30 @@
+{
+  "fmt": {
+    "files": {
+      "include": ["app/", "assets/", "index.tmpl.ts", "main.tsx"]
+    },
+    "options": {
+      "indentWidth": 2,
+      "lineWidth": 80,
+      "proseWrap": "always",
+      "singleQuote": false,
+      "useTabs": false
+    }
+  },
+  "lint": {
+    "files": {
+      "include": ["app/", "assets/", "index.tmpl.ts", "main.tsx"]
+    },
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo", "no-unused-vars"]
+    }
+  },
+  "importMap": "import_map.json",
+  "tasks": {
+    "lume": "deno eval \"import 'lume/task.ts'\" --",
+    "clean": "rm -rf _site",
+    "build": "deno task lume",
+    "serve": "deno task lume -s"
+  }
+}
