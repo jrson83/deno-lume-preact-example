@@ -1,8 +1,8 @@
 {
   "imports": {
     "lume/": "https://deno.land/x/lume@v1.10.0/",
-    "preact": "https://x.lcas.dev/preact@10.5.11/mod.js",
-    "preact/hooks": "https://x.lcas.dev/preact@10.5.11/hooks.js",
-    "preact-render-to-string": "https://x.lcas.dev/preact@10.5.11/ssr.js"
+    "preact": "https://esm.sh/preact@10.9.0",
+    "preact/": "https://esm.sh/preact@10.9.0/",
+    "preact-render-to-string": "https://esm.sh/preact-render-to-string@5.2.0?deps=preact@10.9.0"
   }
 }
