@@ -54,7 +54,7 @@ If you do not use [denoland.vscode-deno](https://marketplace.visualstudio.com/it
 }
 ```
 
-### Configuring JSX auto-import in lumen
+### Configuring JSX auto-import in lume
 
 If you followed the above steps, you will still face one problem, when transpiling with esbuild.
 
@@ -62,7 +62,7 @@ If you followed the above steps, you will still face one problem, when transpili
 
 There are multiple open issues on [deno #13288](https://github.com/denoland/deno/issues/13288) and also [ESBuild #334](https://github.com/evanw/esbuild/issues/334) regarding JSX auto-import support.
 
-One way I found out how to enable auto-import in lumen:
+One way I found out how to enable auto-import in lume:
 
 We create `preact-shim.ts`:
 
