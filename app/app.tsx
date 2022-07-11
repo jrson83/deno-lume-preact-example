@@ -1,5 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
 import { Counter } from "./Counter.tsx";
 import LumeLogo from "../assets/lume.tsx";
 

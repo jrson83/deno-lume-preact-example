@@ -11,6 +11,11 @@ site
   .ignore("app")
   .use(esbuild({
     extensions: [".tsx"],
+    options: {
+      jsxFactory: "h",
+      jsxFragment: "Fragment",
+      inject: ["./preact-shim.ts"],
+    },
   }))
   .use(terser())
   .use(postcss());

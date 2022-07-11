@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-
 const LumeLogo = () => (
   <svg
     width="94"

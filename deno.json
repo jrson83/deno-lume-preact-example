@@ -1,7 +1,7 @@
 {
   "fmt": {
     "files": {
-      "include": ["app/", "assets/", "_config.ts", "index.tmpl.ts", "main.tsx"]
+      "include": ["app/", "assets/", "_config.ts", "index.tmpl.ts", "main.tsx", "preact-shim.ts"]
     },
     "options": {
       "indentWidth": 2,
@@ -13,7 +13,7 @@
   },
   "lint": {
     "files": {
-      "include": ["app/", "assets/", "_config.ts", "index.tmpl.ts", "main.tsx"]
+      "include": ["app/", "assets/", "_config.ts", "index.tmpl.ts", "main.tsx", "preact-shim.ts"]
     },
     "rules": {
       "tags": ["recommended"],
@@ -21,6 +21,10 @@
     }
   },
   "importMap": "import_map.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
   "tasks": {
     "lume": "deno eval \"import 'lume/task.ts'\" --",
     "clean": "rm -rf _site",
