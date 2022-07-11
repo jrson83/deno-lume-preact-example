@@ -1,7 +1,7 @@
 {
   "fmt": {
     "files": {
-      "include": ["app/", "assets/", "index.tmpl.ts", "main.tsx"]
+      "include": ["app/", "assets/", "_config.ts", "index.tmpl.ts", "main.tsx"]
     },
     "options": {
       "indentWidth": 2,
@@ -13,7 +13,7 @@
   },
   "lint": {
     "files": {
-      "include": ["app/", "assets/", "index.tmpl.ts", "main.tsx"]
+      "include": ["app/", "assets/", "_config.ts", "index.tmpl.ts", "main.tsx"]
     },
     "rules": {
       "tags": ["recommended"],
